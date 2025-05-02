@@ -19,32 +19,6 @@ def divide(a, b):
 
 # Main calculator function to handle user interaction and perform operations
 def calculator():
-    """
-    A simple calculator function that provides basic arithmetic operations.
-    This calculator allows users to perform addition, subtraction, multiplication, and division
-    operations through an interactive command-line interface. The calculator runs in a loop
-    until the user chooses to quit.
-    Operations:
-        1. Add - Adds two numbers
-        2. Subtract - Subtracts second number from first number
-        3. Multiply - Multiplies two numbers
-        4. Divide - Divides first number by second number
-    The function handles invalid inputs and division by zero errors gracefully.
-    Returns:
-        None
-    Example:
-        >>> calculator()
-        Select operation:
-        1. Add
-        2. Subtract
-        3. Multiply
-        4. Divide
-        q. Quit
-        Enter choice (1/2/3/4) or 'q' to quit: 1
-        Enter first number: 5
-        Enter second number: 3
-        Result: 8
-    """
     # Dictionary to map user choices to operation names and their corresponding functions
     operations = {
         '1': ('Add', add),
