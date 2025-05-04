@@ -8,7 +8,7 @@ logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
-"""
+
 logging.debug('This is a debug message')
 logging.info('This is an info message')
 logging.warning('This is a warning message')
@@ -23,4 +23,5 @@ def add(x,y):
 add_result = add(num1, num2)
 logging.warning('add: {} + {} = {}'.format(num1, num2))
 
-"""Will learn later """
+Will learn later 
+"""
