@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: arithmetic
+Version: 0.0.1
+Summary: Testing math_package for global installaion
+Home-page: #
+Author: Pruthviraja
+Author-email: pruthviraja@gmail.com
+License: MIT
+Classifier: Programming Language :: Python3.11
+Classifier: Licence :: OSI Approved:: MIT
+Classifier: Operating System :: OS Independent
+License-File: LICENCE.txt

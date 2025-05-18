@@ -1,0 +1,12 @@
+LICENCE.txt
+setup.py
+arithmetic/__init__.py
+arithmetic/addition.py
+arithmetic/math_variables.py
+arithmetic/mul_pow.py
+arithmetic/subtraction.py
+arithmetic.egg-info/PKG-INFO
+arithmetic.egg-info/SOURCES.txt
+arithmetic.egg-info/dependency_links.txt
+arithmetic.egg-info/not-zip-safe
+arithmetic.egg-info/top_level.txt
