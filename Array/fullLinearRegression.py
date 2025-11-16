@@ -1,29 +1,44 @@
 # code to collect data:
-datas =[]
+X_data =[]
+Y_data =[]
 
 while True:
-    a = input("how many datas do you have?\n ")
+    a = input("how many data point that you have? make sure that you have more than two\n ").strip()
 
     try:
         num_data = int(a)
-        break
+        if num_data>=2:
+            break
+        print("there must be atleast 2 datas for prediction. ")
+
     except ValueError:
-        print(" please enter the correct value.")
+        print(" please enter the correct value.i.e Integer")
 
-try:
-    num_data = int(a) #making all the datas numeric
+for i in range(num_data):
+    print(f"\n-- Observation #{i + 1} --")
 
-    print("for collecting datas")
-    for i in range(num_data):
-        data_point_str =  input(f"Enter data point #{i+1}:")
-        data_point_float = float(data_point_str)
-        datas.append(data_point_float)
+    while True:
+        try:
+            x_val_str = input(f"Enter X value (Independent Variable) for point #{i + 1}: ").strip()
+            x_val_float = float(x_val_str)
+            X_data.append(x_val_float)
+            break
+        except ValueError:
+            print(" Invalid input. Please enter a number for X.")
+    while True:
+        try:
+            y_val_str = input(f"Enter Y value (Dependent Variable) for point #{i + 1}: ").strip()
+            y_val_float = float(y_val_str)
+            Y_data.append(y_val_float)
+            break
+        except ValueError:
+            print(" Invalid input. Please enter a number for Y.")
 
-    print(f"successfully collected datas and the list that you entered is {datas}")
+print(f"X Data (Independent): {X_data}")
+print(f"Y Data (Dependent):   {Y_data}")
 
 
-except ValueError:
-    print("invalid input so please retry")
+
 
 model_choice = input("Which model to run (linear, ridge, logistic or Lasso)? ").lower().strip()
 
@@ -32,9 +47,7 @@ if model_choice == 'linear':
 
 elif model_choice =='ridge':
     print("Here you are doing for rigid regression")
-elif model_choice == 'logistic':
-    print(" here you are doing with logistic regression")
-elif model_choice =='Lasso':
+
     print("now you are doing with Lasso")
 else:
     print("Invalid input please re-try to select proper input")
